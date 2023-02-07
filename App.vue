@@ -120,6 +120,7 @@ const countScore = (array) => {
 </script>
 
 <template>
+  <div class="bg-purple-900">
   <div class="w-full h-2/4 flex">
     <div class="flex mb-6 mr-10 ml-10 mt-6  w-full h-80 rounded-md">
       <div class="w-5/6 bg-purple-500 rounded border-solid border-2 border-black">
@@ -200,6 +201,7 @@ const countScore = (array) => {
     </div>
     </div>
   </div>
+</div>
 </template>
 
 <style scoped>
