@@ -43,4 +43,4 @@ countScore() เป็นฟังก์ชันในการคิดคะ�
 # Reference
   1. Game's rules reference from https://www.youtube.com/watch?v=2EnHWC_vtCs
   2. Icon reference from https://codepen.io/melstrict/pen/LYjwzBy
-  3. https://github.com/johakr/html5-slot-machine
+
