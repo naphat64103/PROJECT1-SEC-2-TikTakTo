@@ -63,7 +63,7 @@ function testWin(array) {
     (slot2 === slot3 && slot1 === 8) ||
     (slot1 === slot2 && slot1 === 8) ||
     (slot1 === slot3 && slot1 === 8) ||
-    (slot2 === slot3 && slot2 === 8)) && !(slot1 === slot2 && slot2 === slot3 && slot1 === 8)) {
+    (slot2 === slot3 && slot2 === 8))) {
     status.value = "YOU WIN!"
   }
   else {
