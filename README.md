@@ -27,3 +27,9 @@
   3. กดปุ่ม clear เพื่อรีเซ็ตทุกอย่างให้เป็นค่าเริ่มต้น<br>
   4. ช่อง Rules เป็นช่องที่บอกกติกาการนับคะแนนของเกม<br>
   5. ช่อง History เป็นช่องที่เเสดงประวัติการเล่นของเรา<br>
+  
+  # Reference
+  1. Code structure reference from https://www.youtube.com/watch?v=2EnHWC_vtCs
+  2. Function reference from https://www.youtube.com/watch?v=V3YAm3VoDJ8
+  3. https://codepen.io/melstrict/pen/LYjwzBy
+  4. https://github.com/johakr/html5-slot-machine
