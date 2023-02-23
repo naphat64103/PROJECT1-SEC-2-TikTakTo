@@ -1,5 +1,4 @@
 <script setup>
-import { baseCompile } from '@vue/compiler-core';
 import { ref } from 'vue'
 
 const shuffle = () => {
@@ -49,6 +48,7 @@ const doSlots = () => {
   slot3.value = items[slots[2]]
   testWin(slots)
   const score = countScore(slots)
+  total.value++
   historys.value.unshift(`${total.value}. ${slot1.value} ${slot2.value} ${slot3.value} ${score}`)
 }
 
@@ -64,6 +64,7 @@ function testWin(array) {
     (slot1 === slot2 && slot1 === 8) ||
     (slot1 === slot3 && slot1 === 8) ||
     (slot2 === slot3 && slot2 === 8))) {
+    winCount.value++
     status.value = "YOU WIN!"
   }
   else {
@@ -80,133 +81,133 @@ const countScore = (array) => {
   if (slot1 === slot2 && slot2 === slot3 && slot1 === 0) {
     scoree = 100
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN! +${scoree}`
   }
   if (slot1 === slot2 && slot2 === slot3 && slot1 === 1) {
     scoree = 200
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (slot1 === slot2 && slot2 === slot3 && slot1 === 2) {
     scoree = 300
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (slot1 === slot2 && slot2 === slot3 && slot1 === 3) {
     scoree = 400
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (slot1 === slot2 && slot2 === slot3 && slot1 === 4) {
     scoree = 500
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (slot1 === slot2 && slot2 === slot3 && slot1 === 5) {
     scoree = 600
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (slot1 === slot2 && slot2 === slot3 && slot1 === 6) {
     scoree = 700
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (slot1 === slot2 && slot2 === slot3 && slot1 === 7) {
     scoree = 800
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (slot1 === slot2 && slot2 === slot3 && slot1 === 8) {
     scoree = 1000
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   // SAME 2
   if (((slot1 === slot2 && slot3 === 8) && slot1 === 0) || ((slot1 === slot3 && slot2 === 8) && slot1 === 0) || ((slot2 === slot3 && slot1 === 8) && slot2 === 0)) {
     scoree = 10
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (((slot1 === slot2 && slot3 === 8) && slot1 === 1) || ((slot1 === slot3 && slot2 === 8) && slot1 === 1) || ((slot2 === slot3 && slot1 === 8) && slot2 === 1)) {
     scoree = 20
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (((slot1 === slot2 && slot3 === 8) && slot1 === 2) || ((slot1 === slot3 && slot2 === 8) && slot1 === 2) || ((slot2 === slot3 && slot1 === 8) && slot2 === 2)) {
     scoree = 30
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (((slot1 === slot2 && slot3 === 8) && slot1 === 3) || ((slot1 === slot3 && slot2 === 8) && slot1 === 3) || ((slot2 === slot3 && slot1 === 8) && slot2 === 3)) {
     scoree = 40
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (((slot1 === slot2 && slot3 === 8) && slot1 === 4) || ((slot1 === slot3 && slot2 === 8) && slot1 === 4) || ((slot2 === slot3 && slot1 === 8) && slot2 === 4)) {
     scoree = 50
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (((slot1 === slot2 && slot3 === 8) && slot1 === 5) || ((slot1 === slot3 && slot2 === 8) && slot1 === 5) || ((slot2 === slot3 && slot1 === 8) && slot2 === 5)) {
     scoree = 60
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (((slot1 === slot2 && slot3 === 8) && slot1 === 6) || ((slot1 === slot3 && slot2 === 8) && slot1 === 6) || ((slot2 === slot3 && slot1 === 8) && slot2 === 6)) {
     scoree = 70
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   if (((slot1 === slot2 && slot3 === 8) && slot1 === 7) || ((slot1 === slot3 && slot2 === 8) && slot1 === 7) || ((slot2 === slot3 && slot1 === 8) && slot2 === 7)) {
     scoree = 80
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   // SAME 77
   if ((slot1 === slot2 && slot1 === 8) || (slot1 === slot3 && slot1 === 8) || (slot2 === slot3 && slot2 === 8)) {
     scoree = 500
     score.value = score.value + scoree
-    total.value++
-    winCount.value++
+    // total.value++
+    // winCount.value++
     return `: YOU WIN +${scoree}`
   }
   else {
-    total.value++
+    // total.value++
     score.value = score.value - 20
     return ': YOU LOSE!'
   }
